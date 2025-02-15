@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "eleventy --serve",
-    "build": "eleventy --pathprefix=helloworld",
+    "build": "eleventy --pathprefix='/helloworld'",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
     "lint:check": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "start": "eleventy --serve"
   },
   "author": "",
   "license": "ISC",
