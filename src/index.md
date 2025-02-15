@@ -1,7 +1,7 @@
 ---
 layout: 'homepage.njk'
-main: rory flint
+main: michel zeller
 title: Home
 ---
 
-Software engineer, photographer and maker of things. I write about technology, [books](https://books.rory.codes) and fatherhood. Based in London, England. More [about me](/about/).
+ML Engineer specializing in 3D computer vision and human-centric AI. Completed MSc in Mechanical Engineering at ETH Zurich, focusing on reconstructing human-object interactions using 3D Gaussian Splatting. Experience at meshcapade, LOGIBLOX AG, and MeteoSwiss developing computer vision solutions and software tools. Proficient in PyTorch, Python, and computer vision frameworks. Based in Zurich, Switzerland. More [about me](/about/).

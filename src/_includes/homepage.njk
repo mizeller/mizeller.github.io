@@ -5,6 +5,28 @@
 </header>
 {{ content | safe}}
 <hr />
+
+<h2>Education</h2>
+<div class="education-timeline">
+  {% for entry in collections.education | reverse %}
+  <div class="education-item">
+    <div class="education-meta">
+      <time class="education-period">
+        {{ entry.data.startDate | dateFormat("MMM YYYY") }} - 
+        {{ entry.data.endDate | dateFormat("MMM YYYY") }}
+      </time>
+      <h3 class="school">{{ entry.data.school }}</h3>
+      <div class="degree">{{ entry.data.degree }}</div>
+      <div class="focus">{{ entry.data.focus }}</div>
+    </div>
+    <div class="education-content">
+      {{ entry.content | safe }}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
 <h2>Projects</h2>
 <ul>
   {% for portfolio in collections.portfolio  %}
@@ -15,10 +37,7 @@
   {% endfor %}
 </ul>
 
-<h2>Writing</h2>
-<ul>
-  {% for post in collections.post | reverse %}
-  <li><a class="post-link" href="{{ post.url }}">{{ post.data.title }}</a></li>
-  {% endfor  %}
-</ul>
+
+
+
 {% endblock %}

@@ -25,6 +25,20 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => a.data.position - b.data.position)
   })
 
+  eleventyConfig.addCollection("education", function(collection) {
+    return collection.getFilteredByGlob("src/education/*.md")
+      .sort((a, b) => {
+        return new Date(b.data.startDate) - new Date(a.data.startDate);
+      });
+  });
+
+  eleventyConfig.addFilter("dateFormat", function(date, format) {
+    return new Date(date).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'short'
+    });
+  });
+
   let options = {
     html: true,
   }

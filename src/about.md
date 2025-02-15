@@ -4,18 +4,18 @@ title: About Me
 permalink: /about/
 ---
 
-Hello! My name is Rory, I'm a software engineer from London, England. I studied Full Stack Web Development at
-<a href="https://lambdaschool.com/" target="_blank">Lambda School</a> after several years working as a commercial
-photographer.
+Hello! My name is Michel, I'm a Machine Learning Engineer from Zurich, Switzerland. I studied Mechanical Engineering at <a href="https://ethz.ch/" target="_blank">ETH Zurich</a>.  
+
+By pure chance - or rather luck - I stumbled upon the captivating field of Computer Vision & am particularly interested in 3D computer vision and human-centric AI.
 
 Beyond work I read voraciously, build plenty of side projects and try to live a full life away from all things digital.
 
-Here's what I'm doing [now](/now/).
+<!-- Here's what I'm doing [now](/now/). -->
 
 ## Contact
 
-- [CV](/assets/RoryFlintCV1.pdf)
-- Email me at roryflintphoto at gmail dot com
-- <a href="https://twitter.com/MrRoryFlint/" target="_blank">Twitter</a>
-- <a href="https://github.com/ruairidhflint" target="_blank">Github</a>
-- <a href="https://www.linkedin.com/in/rory-patrick-flint/" target="_blank">LinkedIn</a>
+- [CV](/assets/cv_w_img.pdf)
+- Email me at mizeller at pm dot me
+<!-- - <a href="https://twitter.com/MrRoryFlint/" target="_blank">Twitter</a> -->
+- <a href="https://github.com/mizeller" target="_blank">Github</a>
+- <a href="https://www.linkedin.com/in/mizeller/" target="_blank">LinkedIn</a>

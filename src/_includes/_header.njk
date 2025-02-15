@@ -1,32 +1,30 @@
 <head>
-<script async src="https://analytics.umami.is/script.js" data-website-id="360e23fb-dc51-4801-8584-453e13c2442c"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="f38e5e8c-a760-4c0a-814c-c1489633d62f"></script>
   <meta content="text/html; charset=UTF-8" name="Content-Type" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width" />
-
   <meta property="og:site_name" content="{{ title }}" />
   <meta property="og:locale" content="en_US" />
-
   <meta property="og:title" content="{{ title }}" />
   <meta property="og:type" content="article" />
 {% if description %}
   <meta property="og:description" content="{{ description }}" />
     <meta name="description" content="{{ description }}" />
   {% else %}
-    <meta name="description" content="Portfolio and writing of Software Developer Rory Flint" />
-  <meta property="og:description" content="Portfolio and writing of Software Developer Rory Flint" />
+    <meta name="description" content="Hello World by Michel Zeller" />
+  <meta property="og:description" content="Hello World by Michel Zeller" />
 {% endif %}
 
 
-<meta property="og:image" content="/assets/192.png" />
-<meta name="author" content="Rory Flint" />
+<meta property="og:image" content="/assets/nxt.png" />
+<meta name="author" content="Michel Zeller" />
 
 {% if permalink %}
-  <meta property="og:url" content="https://rory.codes{{ permalink }}"  />  
-  <link rel="canonical" href="https://rory.codes{{ permalink }}"  />
-  {% else %}
-  <meta property="og:url" content="https://rory.codes" />  
-  <link rel="canonical" href="https://rory.codes" />
+  <meta property="og:url" content="https://mizeller.github.io/helloworld{{ permalink }}"  />  
+  <link rel="canonical" href="https://mizeller.github.io/helloworld{{ permalink }}"  />
+{% else %}
+  <meta property="og:url" content="https://mizeller.github.io/helloworld" />  
+  <link rel="canonical" href="https://mizeller.github.io/helloworld" />
 {% endif %}
 
   <meta name="twitter:card" content="summary" />
@@ -34,11 +32,11 @@
   <meta name="twitter:site" content="@mrroryflint" />
   <meta name="twitter:creator" content="@mrroryflint" />
 
-  <link rel="icon" href="/assets/32.png" sizes="32x32">
-  <link rel="icon" href="/assets/192.png"sizes="192x192"> 
+  <link rel="icon" href="/assets/nxt.png" sizes="32x32">
+  <link rel="icon" href="/assets/nxt.png"sizes="192x192"> 
 
-  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />  
-  <title>{{ title }} - Rory Flint</title>  
+  <link rel="icon" href="/assets/nxt.ico" type="image/x-icon" />  
+  <title>{{ title }} - Michel Zeller</title>  
   <link rel="stylesheet" href="{{ '/css/styles.css' }}">
       <script>
       const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
