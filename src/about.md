@@ -16,6 +16,6 @@ Beyond work I read voraciously, build plenty of side projects and try to live a 
 
 - [CV](/assets/cv_w_img.pdf)
 - Email me at mizeller at pm dot me
-<!-- - <a href="https://twitter.com/MrRoryFlint/" target="_blank">Twitter</a> -->
+
 - <a href="https://github.com/mizeller" target="_blank">Github</a>
 - <a href="https://www.linkedin.com/in/mizeller/" target="_blank">LinkedIn</a>

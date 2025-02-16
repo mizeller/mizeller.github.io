@@ -34,3 +34,6 @@ logs
 !.vscode/extensions.json
 *.code-workspace
 .vscode-test
+
+### scratch
+src/scratch

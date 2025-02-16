@@ -1,11 +1,12 @@
 ---
 layout: 'education.njk'
 title: 'ETH Zurich'
-startDate: '2016-09'
-endDate: '2022-06'
+startDate: '2017-09'
+endDate: '2021-09'
 school: 'ETH Zurich'
-degree: 'MSc Mechanical Engineering'
-focus: 'Robotics & Control'
+degree: 'BSc Mechanical Engineering'
+focus: 'Mechanical Engineering'
 ---
 
-Description of your studies, achievements, and experiences at ETH Zurich goes here.
+Bachelor studies in Mechanical Engineering at ETH Zurich.
+Final Thesis: "Drone Tracking in Challenging Conditions"

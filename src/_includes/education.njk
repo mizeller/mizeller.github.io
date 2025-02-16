@@ -3,17 +3,20 @@
 {% block main %}
 <article class="education-timeline">
     <div class="education-item">
-        <div class="education-meta">
-            <time class="education-period">
-                {{ startDate | dateFormat("MMM YYYY") }} - 
-                {{ endDate | dateFormat("MMM YYYY") }}
-            </time>
+        <div class="education-header">
             <h2 class="school">{{ school }}</h2>
-            <h3 class="degree">{{ degree }}</h3>
-            <div class="focus">{{ focus }}</div>
+            <time class="education-period">
+                {{ startDate | dateFormat("MMM YYYY") }} - {{ endDate | dateFormat("MMM YYYY") }}
+            </time>
         </div>
-        <div class="education-content">
-            {{ content | safe }}
+        <div class="education-details">
+            <div class="education-titles">
+                <h3 class="degree">{{ degree }}</h3>
+                <div class="focus">{{ focus }}</div>
+            </div>
+            <div class="education-content">
+                {{ content | safe }}
+            </div>
         </div>
     </div>
 </article>
