@@ -6,24 +6,30 @@
 {{ content | safe}}
 <hr />
 
+<h2>Work</h2>
+<div class="education-timeline">
+    {% for entry in collections.work %}
+    <div class="education-entry">
+        <div class="period-title">
+            <span class="period">{{ entry.data.startDate | dateFormat("MMM YYYY") }} - {{ entry.data.endDate | dateFormat("MMM YYYY") }}</span>
+            <span class="title">{{ entry.data.degree }} - {{ entry.data.school }}</span>
+        </div>
+        <div class="content">{{ entry.content | safe }}</div>
+    </div>
+    {% endfor %}
+</div>
+
 <h2>Education</h2>
 <div class="education-timeline">
-  {% for entry in collections.education | reverse %}
-  <div class="education-item">
-    <div class="education-meta">
-      <time class="education-period">
-        {{ entry.data.startDate | dateFormat("MMM YYYY") }} - 
-        {{ entry.data.endDate | dateFormat("MMM YYYY") }}
-      </time>
-      <h3 class="school">{{ entry.data.school }}</h3>
-      <div class="degree">{{ entry.data.degree }}</div>
-      <div class="focus">{{ entry.data.focus }}</div>
+    {% for entry in collections.education | reverse %}
+    <div class="education-entry">
+        <div class="period-title">
+            <span class="period">{{ entry.data.startDate | dateFormat("MMM YYYY") }} - {{ entry.data.endDate | dateFormat("MMM YYYY") }}</span>
+            <span class="title">{{ entry.data.degree }} - {{ entry.data.school }}</span>
+        </div>
+        <div class="content">{{ entry.content | safe }}</div>
     </div>
-    <div class="education-content">
-      {{ entry.content | safe }}
-    </div>
-  </div>
-  {% endfor %}
+    {% endfor %}
 </div>
 
 

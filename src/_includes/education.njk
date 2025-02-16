@@ -1,22 +1,11 @@
 {% extends "base.njk" %}
 
 {% block main %}
-<article class="education-timeline">
-    <div class="education-item">
-        <div class="education-header">
-            <div class="education-top-line">
-                <h2 class="school">{{ school }}</h2>
-                <time class="education-period">
-                    {{ startDate | dateFormat("MMM YYYY") }} - {{ endDate | dateFormat("MMM YYYY") }}
-                </time>
-            </div>
-            <h3 class="degree">{{ degree }}</h3>
-        </div>
-        <div class="education-details">
-            <div class="education-content">
-                {{ content | safe }}
-            </div>
-        </div>
+<div class="education-entry">
+    <div class="period-title">
+        <span class="period">{{ startDate | dateFormat("MMM YYYY") }} - {{ endDate | dateFormat("MMM YYYY") }}</span>
+        <span class="title">{{ degree }} - {{ school }}</span>
     </div>
-</article>
+    <div class="content">{{ content | safe }}</div>
+</div>
 {% endblock %}

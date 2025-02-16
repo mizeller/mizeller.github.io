@@ -305,73 +305,29 @@ blockquote {
   opacity: 0.8;
 }
 
-/* Education Styles - Consolidated Version */
 .education-timeline {
   max-width: 800px;
   margin: 0 auto;
   padding: 1rem 0;
+  /* font-family: monospace; */
 }
 
-.education-item {
-  position: relative;
-  padding: 1.5rem;
+.education-entry {
   margin-bottom: 1.5rem;
-  border-left: 3px solid var(--link);
-  background: var(--background);
+  /* white-space: pre-wrap; */
 }
 
-.education-header {
+.period-title {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.5rem;
+  gap: 1ch;
 }
 
-.school {
-  margin: 0;
-  font-size: 1.2rem;
-  color: var(--main-text);
+.period {
+  min-width: 23ch; /* Width of "MMM YYYY - MMM YYYY" */
 }
 
-.education-period {
+.content {
+  margin-left: 23ch; /* Same as period width */
+  padding-left: 1ch; /* Same as gap */
   color: var(--mediumgray);
-  font-size: 0.9rem;
-}
-
-.education-details {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 1rem;
-  padding-left: 1rem;
-}
-
-.education-titles {
-  margin-right: 1rem;
-}
-
-.degree {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--main-text);
-}
-
-.focus {
-  display: inline-block;
-  padding: 0.25rem 0.5rem;
-  background: var(--link);
-  color: var(--background);
-  border-radius: 4px;
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
-}
-
-.education-content {
-  color: var(--main-text);
-}
-
-/* Dark mode support */
-.dark .education-item {
-  background: var(--background);
-  border-left: 3px solid var(--link);
 }
