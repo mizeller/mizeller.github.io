@@ -21,7 +21,7 @@
 
 <h2>Education</h2>
 <div class="education-timeline">
-    {% for entry in collections.education | reverse %}
+    {% for entry in collections.education  %}
     <div class="education-entry">
         <div class="period-title">
             <span class="period">{{ entry.data.startDate | dateFormat("MMM YYYY") }} - {{ entry.data.endDate | dateFormat("MMM YYYY") }}</span>

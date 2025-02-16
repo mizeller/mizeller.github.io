@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "eleventy --serve",
+    "dev": "eleventy --serve --pathprefix=''",
     "build": "eleventy --pathprefix='/helloworld'",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
