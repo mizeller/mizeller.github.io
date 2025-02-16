@@ -4,16 +4,15 @@
 <article class="education-timeline">
     <div class="education-item">
         <div class="education-header">
-            <h2 class="school">{{ school }}</h2>
-            <time class="education-period">
-                {{ startDate | dateFormat("MMM YYYY") }} - {{ endDate | dateFormat("MMM YYYY") }}
-            </time>
+            <div class="education-top-line">
+                <h2 class="school">{{ school }}</h2>
+                <time class="education-period">
+                    {{ startDate | dateFormat("MMM YYYY") }} - {{ endDate | dateFormat("MMM YYYY") }}
+                </time>
+            </div>
+            <h3 class="degree">{{ degree }}</h3>
         </div>
         <div class="education-details">
-            <div class="education-titles">
-                <h3 class="degree">{{ degree }}</h3>
-                <div class="focus">{{ focus }}</div>
-            </div>
             <div class="education-content">
                 {{ content | safe }}
             </div>
