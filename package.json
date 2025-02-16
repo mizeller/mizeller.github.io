@@ -16,12 +16,13 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
     "eslint": "^8.22.0"
   },
   "dependencies": {
     "eslint-config-prettier": "^8.5.0",
-    "markdown-it": "^13.0.1",
+    "luxon": "^3.5.0",
+    "markdown-it": "^13.0.2",
     "markdown-it-checkbox": "^1.1.0",
     "prettier": "^2.7.1"
   }
