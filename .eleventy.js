@@ -51,6 +51,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary('md', md)
 
   return {
+    pathPrefix: "/helloworld/",
     dir: {
       input: 'src',
       output: '_site',
