@@ -24,6 +24,7 @@
     "luxon": "^3.5.0",
     "markdown-it": "^13.0.2",
     "markdown-it-checkbox": "^1.1.0",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "three": "^0.160.0"
   }
 }
