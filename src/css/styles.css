@@ -175,7 +175,7 @@ pre {
  */
 
 /* Inline code */
-:not(pre) > code[class*='language-'] {
+:not(pre)>code[class*='language-'] {
   padding: 0.1em;
   border-radius: 0.3em;
   white-space: normal;
@@ -252,13 +252,14 @@ pre {
 }
 
 @media screen and (-ms-high-contrast: active) {
+
   code[class*='language-'],
   pre[class*='language-'] {
     color: windowText;
     background: window;
   }
 
-  :not(pre) > code[class*='language-'],
+  :not(pre)>code[class*='language-'],
   pre[class*='language-'] {
     background: window;
   }
@@ -322,11 +323,40 @@ blockquote {
 }
 
 .period {
-  min-width: 23ch; /* Width of "MMM YYYY - MMM YYYY" */
+  min-width: 23ch;
+  /* Width of "MMM YYYY - MMM YYYY" */
 }
 
 .content {
-  margin-left: 23ch; /* Same as period width */
-  padding-left: 1ch; /* Same as gap */
+  margin-left: 23ch;
+  padding-left: 1ch;
   color: var(--mediumgray);
+}
+
+/* toggle header styles */
+.collapsible-content {
+  max-height: 2000px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.collapsed .collapsible-content {
+  max-height: 0;
+}
+
+.collapsible-header {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggle-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.collapsed .collapsible-header .toggle-icon {
+  transform: rotate(-90deg);
 }
