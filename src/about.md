@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-Hello! My name is Michel, I'm a Machine Learning Engineer from Zurich, Switzerland. I studied Mechanical Engineering at <a href="https://ethz.ch/" target="_blank">ETH Zurich</a>.  
+Hello! My name is Michel, I'm a Machine Learning Engineer from Zurich, Switzerland. I studied Mechanical Engineering at <a href="https://ethz.ch/" target="_blank">ETH Zurich</a>.
 
 By pure chance - or rather luck - I stumbled upon the captivating field of Computer Vision & am particularly interested in 3D computer vision and human-centric AI.
 

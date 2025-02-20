@@ -8,7 +8,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('./src/css')
   eleventyConfig.addPassthroughCopy('./src/assets')
-  eleventyConfig.addPassthroughCopy("src/js")
+  eleventyConfig.addPassthroughCopy('src/js')
 
   eleventyConfig.addFilter('postDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED)
@@ -26,26 +26,24 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => a.data.position - b.data.position)
   })
 
-  eleventyConfig.addCollection("education", function (collection) {
-    return collection.getFilteredByGlob("src/education/*.md")
-      .sort((a, b) => {
-        return new Date(b.data.startDate) - new Date(a.data.startDate);
-      });
-  });
+  eleventyConfig.addCollection('education', function (collection) {
+    return collection.getFilteredByGlob('src/education/*.md').sort((a, b) => {
+      return new Date(b.data.startDate) - new Date(a.data.startDate)
+    })
+  })
 
-  eleventyConfig.addCollection("work", function (collection) {
-    return collection.getFilteredByGlob("src/work/*.md")
-      .sort((a, b) => {
-        return new Date(b.data.startDate) - new Date(a.data.startDate);
-      });
-  });
+  eleventyConfig.addCollection('work', function (collection) {
+    return collection.getFilteredByGlob('src/work/*.md').sort((a, b) => {
+      return new Date(b.data.startDate) - new Date(a.data.startDate)
+    })
+  })
 
-  eleventyConfig.addFilter("dateFormat", function (date, format) {
+  eleventyConfig.addFilter('dateFormat', function (date, format) {
     return new Date(date).toLocaleDateString('en-US', {
       year: 'numeric',
-      month: 'short'
-    });
-  });
+      month: 'short',
+    })
+  })
 
   let options = {
     html: true,
@@ -58,11 +56,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary('md', md)
 
   return {
-    pathPrefix: "/helloworld/",
     dir: {
       input: 'src',
       output: '_site',
-      includes: '_includes'
+      includes: '_includes',
     },
   }
 }

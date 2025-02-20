@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "eleventy --serve",
-    "build": "eleventy --pathprefix='/helloworld'",
+    "dev": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
     "lint:check": "eslint .",
     "lint:fix": "eslint --fix .",
-    "start": "eleventy --serve"
+    "start": "npx @11ty/eleventy --serve"
   },
   "author": "",
   "license": "ISC",
