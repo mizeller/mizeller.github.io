@@ -82,7 +82,7 @@ class Starfield {
                 });
 
                 object.scale.set(0.02, 0.02, 0.02);
-                object.position.set(0.0, -2.0, 0.0);
+                object.position.set(0.0, -2.5, 0.0);
 
                 this.scene.add(object);
                 this.avatar = object;

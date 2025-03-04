@@ -10,6 +10,8 @@
   --accent-color: #0072d6;
   --text-secondary: #666666;
   --bg-color-dark: #232323;
+  --icon-color: #121212;
+  --hr-color: #333;
 }
 
 .dark {
@@ -17,6 +19,8 @@
   --main-text: #e4e4e4;
   --darkgray: #e4e4e4;
   --link: #6aa7dc;
+  --icon-color: #e4e4e4;
+  --hr-color: #eee;
 }
 
 #toggleDarkMode {
@@ -30,6 +34,12 @@
     transition: opacity 0.2s ease-in-out;
   }
 }
+
+hr {
+  border: 0px solid var(--black);
+  border-top: 1px solid var(--hr-color);
+}
+
 
 body {
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
@@ -57,7 +67,7 @@ h1 {
 
 hr {
   border: 0px solid var(--black);
-  border-top: 1px solid var(--lightgray);
+  border-top: 1px solid var(--hr-color);
 }
 
 img {
@@ -411,4 +421,9 @@ blockquote {
   gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.social-media a i {
+  color: var(--icon-color) !important;
+  font-size: 1.1em;
 }
