@@ -2,69 +2,70 @@
 {% block main %}
   <header>
     <h1>{{ main }}
-      <span id="toggleDarkMode">*</span></h1>
-  </header>
-  {{ content | safe}}
-  <hr/>
+      <span id="toggleDarkMode"><img src='/assets/nxt.ico' alt="Toggle" width="16" height="16"></span>
+      {# <span id="toggleDarkMode">*</span></h1> #}
+    </header>
+    {{ content | safe}}
 
-  <div class="collapsible-section">
-    <h2 class="collapsible-header" onclick="toggleSection('work')">
-      <span class="toggle-icon">▾</span> Work
+    <div class="canvas-container">
+      <canvas class="starfield"></canvas>
+      <div class="canvas-tooltip">Hold CTRL to enable controls</div>
+    </div>
+    {# Horizontal Line #}
+    <hr/>
+    {# Work Section #}
+    <div class="collapsible-section">
+      <h2 class="collapsible-header" onclick="toggleSection('work')">
+        <span class="toggle-icon">▾</span> Work
   </h2>
-    <div id="work" class="collapsible-content">
-      <div class="education-timeline">
-        {% for entry in collections.work %}
-          <div class="education-entry">
-            <div class="period-title">
-              <span class="period">{{ entry.data.startDate | dateFormat("MMM YYYY") }} - {{ entry.data.endDate | dateFormat("MMM YYYY") }}</span>
-              <span class="title">{{ entry.data.degree }} - {{ entry.data.school }}</span>
+      <div id="work" class="collapsible-content">
+        <div class="education-timeline">
+          {% for entry in collections.work %}
+            <div class="education-entry">
+              <div class="period-title">
+                <span class="period">{{ entry.data.startDate | dateFormat("MMM YYYY") }} - {{ entry.data.endDate | dateFormat("MMM YYYY") }}</span>
+                <span class="title">{{ entry.data.degree }} - {{ entry.data.school }}</span>
+              </div>
+              <div class="content">{{ entry.content | safe }}</div>
             </div>
-            <div class="content">{{ entry.content | safe }}</div>
-          </div>
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="collapsible-section">
-    <h2 class="collapsible-header" onclick="toggleSection('education')">
-      <span class="toggle-icon">▾</span> Education
+    {# Education #}
+    <div class="collapsible-section">
+      <h2 class="collapsible-header" onclick="toggleSection('education')">
+        <span class="toggle-icon">▾</span> Education
   </h2>
-    <div id="education" class="collapsible-content">
-      <div class="education-timeline">
-        {% for entry in collections.education %}
-          <div class="education-entry">
-            <div class="period-title">
-              <span class="period">{{ entry.data.startDate | dateFormat("MMM YYYY") }} - {{ entry.data.endDate | dateFormat("MMM YYYY") }}</span>
-              <span class="title">{{ entry.data.degree }} - {{ entry.data.school }}</span>
+      <div id="education" class="collapsible-content">
+        <div class="education-timeline">
+          {% for entry in collections.education %}
+            <div class="education-entry">
+              <div class="period-title">
+                <span class="period">{{ entry.data.startDate | dateFormat("MMM YYYY") }} - {{ entry.data.endDate | dateFormat("MMM YYYY") }}</span>
+                <span class="title">{{ entry.data.degree }} - {{ entry.data.school }}</span>
+              </div>
+              <div class="content">{{ entry.content | safe }}</div>
             </div>
-            <div class="content">{{ entry.content | safe }}</div>
-          </div>
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="collapsible-section">
-    <h2 class="collapsible-header" onclick="toggleSection('projects')">
-      <span class="toggle-icon">▾</span> Projects
+    {# Projects #}
+    <div class="collapsible-section">
+      <h2 class="collapsible-header" onclick="toggleSection('projects')">
+        <span class="toggle-icon">▾</span> Projects
   </h2>
-    <div id="projects" class="collapsible-content">
-      <ul>
-        {% for portfolio in collections.portfolio %}
-          <li>
-            <a class="post-link" href="{{ portfolio.url }}">{{ portfolio.data.title }}</a> -
+      <div id="projects" class="collapsible-content">
+        <ul>
+          {% for portfolio in collections.portfolio %}
+            <li>
+              <a class="post-link" href="{{ portfolio.url }}">{{ portfolio.data.title }}</a> -
     {{portfolio.data.summary}}
-          </li>
-        {% endfor %}
-      </ul>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <hr/>
-
-  <div class="canvas-container">
-    <canvas class="starfield"></canvas>
-  </div>
-
-{% endblock %}
+  {% endblock %}
