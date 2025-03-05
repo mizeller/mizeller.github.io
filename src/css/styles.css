@@ -14,7 +14,8 @@
   --hr-color: #333;
 }
 
-.dark {
+/* Change .dark to .dark-mode */
+.dark-mode {
   --background: rgba(24, 24, 24, 1);
   --main-text: #e4e4e4;
   --darkgray: #e4e4e4;
@@ -426,4 +427,19 @@ blockquote {
 .social-media a i {
   color: var(--icon-color) !important;
   font-size: 1.1em;
+}
+
+.pdf-container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+/* Add dark mode styles for PDF viewer */
+.dark-mode .pdf-container {
+  background: var(--background);
+}
+
+.dark-mode .pdf-viewer {
+  filter: invert(1);
 }

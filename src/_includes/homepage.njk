@@ -2,8 +2,9 @@
 {% block main %}
   <header>
     <h1>{{ main }}
-      <span id="toggleDarkMode"><img src='/assets/nxt.ico' alt="Toggle" width="16" height="16"></span>
-      {# <span id="toggleDarkMode">*</span></h1> #}
+      <span id="toggleDarkMode">
+        <img src='/assets/nxt.ico' alt="Toggle" width="16" height="16" id="modeIcon">
+      </span>
     </header>
     {{ content | safe}}
 
@@ -27,7 +28,10 @@
       <a target="_blank" href="https://github.com/mizeller">
         <i class="fa-brands fa-github"></i>
       </a>
-      <a target="_blank" href="https://drive.proton.me/urls/8FFPT5XRBW#JtJtsJhShgcm">
+      {# <a target="_blank" href="https://drive.proton.me/urls/8FFPT5XRBW#JtJtsJhShgcm">
+        <i class="fa-solid fa-file-pdf"></i>
+      </a> #}
+      <a href="/cv">
         <i class="fa-solid fa-file-pdf"></i>
       </a>
     </div>

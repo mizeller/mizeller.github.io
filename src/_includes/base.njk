@@ -2,11 +2,17 @@
 <html lang="en">
     <head>
         {% include "./_header.njk" %}
+        <script>
+            // Apply theme immediately to prevent flash
+            document.documentElement.classList.toggle('dark-mode', 
+                localStorage.getItem('darkMode') === 'true'
+            );
+        </script>
     </head>
     <body>
         {% block main %}{% endblock %}
-        <script src="{{ '/js/darkmode.js' | url }}"></script>
-        <script src="/js/toggle.js"></script>
-        <script src="/js/stars.js"></script>
+        <script defer src="{{ '/js/darkmode.js' | url }}"></script>
+        <script defer src="/js/toggle.js"></script>
+        <script defer src="/js/stars.js"></script>
     </body>
 </html>
