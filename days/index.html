@@ -34,6 +34,12 @@
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+        <script>
+            // Apply theme immediately to prevent flash
+            document.documentElement.classList.toggle('dark-mode', 
+                localStorage.getItem('darkMode') === 'true'
+            );
+        </script>
     </head>
     <body>
         
@@ -42,8 +48,8 @@
 <a class="port-link" href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank" rel="noopener noreferrer" `>Deployed</a>
 
 
-        <script src="/js/darkmode.js"></script>
-        <script src="/js/toggle.js"></script>
-        <script src="/js/stars.js"></script>
+        <script defer src="/js/darkmode.js"></script>
+        <script defer src="/js/toggle.js"></script>
+        <script defer src="/js/stars.js"></script>
     </body>
 </html>

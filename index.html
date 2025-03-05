@@ -34,13 +34,20 @@
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+        <script>
+            // Apply theme immediately to prevent flash
+            document.documentElement.classList.toggle('dark-mode', 
+                localStorage.getItem('darkMode') === 'true'
+            );
+        </script>
     </head>
     <body>
         
   <header>
     <h1>michel zeller
-      <span id="toggleDarkMode"><img src='/assets/nxt.ico' alt="Toggle" width="16" height="16"></span>
-      
+      <span id="toggleDarkMode">
+        <img src='/assets/nxt.ico' alt="Toggle" width="16" height="16" id="modeIcon">
+      </span>
     </header>
     <p><em>ML Engineer specializing in 3D computer vision and human-centric AI.</em></p>
 <p>I am currently working as a research intern @<a href="https://meshcapade.com">meshcapade</a>.</p>
@@ -69,7 +76,8 @@
       <a target="_blank" href="https://github.com/mizeller">
         <i class="fa-brands fa-github"></i>
       </a>
-      <a target="_blank" href="https://drive.proton.me/urls/8FFPT5XRBW#JtJtsJhShgcm">
+      
+      <a href="/cv">
         <i class="fa-solid fa-file-pdf"></i>
       </a>
     </div>
@@ -85,8 +93,8 @@
     
 
   
-        <script src="/js/darkmode.js"></script>
-        <script src="/js/toggle.js"></script>
-        <script src="/js/stars.js"></script>
+        <script defer src="/js/darkmode.js"></script>
+        <script defer src="/js/toggle.js"></script>
+        <script defer src="/js/stars.js"></script>
     </body>
 </html>
