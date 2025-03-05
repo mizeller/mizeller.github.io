@@ -1,5 +1,5 @@
 ---
-layout: 'about.njk'
+layout: 'cv.njk'
 permalink: /cv/index.html
 ---
 <div class="pdf-container" style="width: 100%; height: 100vh;">
