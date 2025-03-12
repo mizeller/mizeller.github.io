@@ -8,11 +8,14 @@
                 localStorage.getItem('darkMode') === 'true'
             );
         </script>
+        {% block styles %}{% endblock %}
     </head>
     <body>
         {% block main %}{% endblock %}
-        <script defer src="{{ '/js/darkmode.js' | url }}"></script>
-        <script defer src="/js/toggle.js"></script>
-        <script defer src="/js/stars.js"></script>
+        {% block scripts %}
+            <script defer src="{{ '/js/darkmode.js' | url }}"></script>
+            <script defer src="/js/toggle.js"></script>
+            <script defer src="/js/stars.js"></script>
+        {% endblock %}
     </body>
 </html>
